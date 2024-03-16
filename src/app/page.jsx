@@ -129,7 +129,7 @@ const Page = () => {
               />
             </div>
             <div className="flex flex-col space-y-2">
-              <label htmlFor="metodestudy">Metode belajar</label>
+              <label htmlFor="metodestudy">Metode istirahat</label>
               <select
                 className="w-[90%] rounded-md px-3 py-2 border-[3px] border-main-secondary  bg-main-primary focus:border-2 focus:border-main-secondary"
                 onChange={(e) => setMetodeStudy(parseFloat(e.target.value))}
