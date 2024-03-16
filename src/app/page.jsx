@@ -37,6 +37,8 @@ const Page = () => {
                 },
                 id: "timer",
               });
+
+            playAlarm();
             return 0;
           }
           return prevTimer - 1;
@@ -57,7 +59,7 @@ const Page = () => {
   const handleTimer = (e) => {
     e.preventDefault();
     setHasUserInput(true);
-    console.log(metodeStudy);
+    // console.log(metodeStudy);
 
     if (studyTime > 0 && !isNaN(studyTime) && metodeStudy !== 0) {
       toast.error("Istirahat dimulai", {
@@ -99,6 +101,11 @@ const Page = () => {
         id: "timer",
       });
     }
+  };
+
+  const playAlarm = () => {
+    const audio = new Audio("/Lemon.mp3");
+    audio.play();
   };
 
   return (
