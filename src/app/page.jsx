@@ -104,9 +104,14 @@ const Page = () => {
     <Fragment>
       <Toaster />
       <div className="min-h-[100vh] bg-main-primary flex flex-col justify-evenly items-center">
-        <h1 className="text-3xl text-main-secondary font-bold text-center uppercase">
-          Study Timer
-        </h1>
+        <div>
+          <h1 className="text-3xl text-main-secondary font-bold text-center uppercase">
+            CUY MODORO 😎
+          </h1>
+          <h2 className="text-main-secondary font-semibold italic ">
+            Rest time for you
+          </h2>
+        </div>
         <div className="">
           <div className="flex justify-center items-center w-full mb-16">
             <span className="text-3xl w-1/2 text-center py-5 rounded-xl bg-main-secondary text-main-primary shadow-md shadow-main-secondary border-2 border-main-primary">
