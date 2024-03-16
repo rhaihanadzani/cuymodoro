@@ -57,8 +57,9 @@ const Page = () => {
   const handleTimer = (e) => {
     e.preventDefault();
     setHasUserInput(true);
+    console.log(metodeStudy);
 
-    if (studyTime > 0 && !isNaN(studyTime)) {
+    if (studyTime > 0 && !isNaN(studyTime) && metodeStudy !== 0) {
       toast.error("Istirahat dimulai", {
         icon: "⏰",
         duration: 3000,
